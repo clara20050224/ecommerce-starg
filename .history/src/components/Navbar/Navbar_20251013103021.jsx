@@ -144,7 +144,7 @@ const Navbar = ({ cartCount, cartItems, handleOrderPopup, removeFromCart }) => {
                     </ul>
                     <div className="mt-4 flex justify-between items-center">
                       <h4 className="font-semibold">Total:</h4>
-                      <span className="text-lg font-bold">Rp{getTotalPrice()}</span>
+                      <span className="text-lg font-bold">${getTotalPrice()}</span>
                     </div>
                   </>
                 ) : (

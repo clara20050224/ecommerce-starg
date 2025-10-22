@@ -11,23 +11,23 @@ const HeroData = [
   {
     id: 1,
     img: Image1,
-    subtitle: "Summer Outift",
-    title: "Simple but Stylish",
-    title2: "Comfy",
+    subtitle: "Beats Solo",
+    title: "Wireless",
+    title2: "Headphone",
   },
   {
     id: 2,
     img: Image2,
-    subtitle: "Asthetic Blouse",
-    title: "Cute and Comfy",
-    title2: "For Cute People",
+    subtitle: "Beats Solo",
+    title: "Wireless",
+    title2: "Virtual",
   },
   {
     id: 3, 
     img: Image3,
-    subtitle: "Black Pants",
+    subtitle: "Beats Solo",
     title: "Branded",
-    title2: "With White Line",
+    title2: "Laptops",
   },
 ];
 

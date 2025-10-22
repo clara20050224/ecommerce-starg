@@ -21,9 +21,9 @@ const BannerData = {
   title: 'Fine Smile',
   date: '10 Jan to 28 Jan',
   image: headphone,
-  title2: 'Summer Outfit Recommendation',
-  title3: 'Summer Sale',
-  title4: 'A casual summer look with a sporty touch — a navy tank top, striped shirt, denim shorts, and classic sneakers for a simple yet stylish outfit.',
+  title2: 'Air Solo Bass',
+  title3: 'Winter Sale',
+  title4: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis',
   bgColor: '#f42c37',
 };
 
@@ -32,9 +32,9 @@ const BannerData2 = {
   title: "Happy Hours",
   date: "14 Jan to 28 Jan",
   image: watch,
-  title2: "Casual Outfit for Man",
-  title3: "Summer Sale",
-  title4: "A sleek monochrome street style — black plaid shirt, washed denim pants, and all-black sneakers for a clean, confident, and effortlessly cool look.",
+  title2: "Smart Solo",
+  title3: "Winter Sale",
+  title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   bgColor: "#2dcc6f",
 };
 

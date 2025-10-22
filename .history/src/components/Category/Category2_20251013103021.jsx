@@ -13,10 +13,10 @@ const Category = () => {
           <div className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-gray-300/90 to-gray-100 text-white rounded-3xl relative h-[320px] flex items-end transition-transform duration-300 hover:scale-105">
             <div>
               <div className="mb-4">
-                <p className="mb-[2px] text-white">Find</p>
-                <p className="text-2xl font-semibold mb-[2px]">Your</p>
+                <p className="mb-[2px] text-white">Enjoy</p>
+                <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
-                  Cute Top
+                  Laptop
                 </p>
                 <Button
                   text="Browse"
@@ -36,8 +36,8 @@ const Category = () => {
           <div className="py-10 pl-5 bg-gradient-to-br from-brandGreen/90 to-brandGreen/90 text-white rounded-3xl relative h-[320px] flex items-end transition-transform duration-300 hover:scale-105">
             <div>
               <div className="mb-20">
-                <p className="mb-[2px] text-black-400">Find</p>
-                <p className="text-2xl font-semibold mb-[2px]">Your</p>
+                <p className="mb-[2px] text-white-400">Enjoy</p>
+                <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-20 mb-2">
                   Earphone
                 </p>
@@ -55,10 +55,10 @@ const Category = () => {
           <div className="py-10 pl-5 bg-gradient-to-br from-brandBlue to-brandBlue/90 text-white rounded-3xl relative h-[320px] flex items-end transition-transform duration-300 hover:scale-105">
             <div>
               <div className="mb-20">
-                <p className="mb-[2px] text-white">Find</p>
-                <p className="text-2xl font-semibold mb-[2px]">Your</p>
+                <p className="mb-[2px] text-white">Enjoy</p>
+                <p className="text-2xl font-semibold mb-[2px]">With</p>
                 <p className="text-4xl xl:text-5xl font-bold opacity-40 mb-2">
-                  Hoodie
+                  Gadget
                 </p>
                 <Button
                   text="Browse"

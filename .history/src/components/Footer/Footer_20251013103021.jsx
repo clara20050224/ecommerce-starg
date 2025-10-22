@@ -39,16 +39,17 @@ const Footer = () => {
               className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl
 "
             >
-              Stargshop
+              Eshop
             </a>
             {
               <p className="text-gray-600 dark:text-white/70  lg:pr-24 pt-3">
-                Welcome to ESHOP! Find your favorite styles and enjoy an easy, fun, and secure shopping experience.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Maiores alias cum
               </p>
             }
             {
               <p className="text-gray-500 mt-4">
-                Made with 💖 by Starg Group
+                Made with 💖 by The Coding Journey
               </p>
             }
             {
@@ -107,13 +108,13 @@ const Footer = () => {
                 {
                   <div className="flex items-center gap-3">
                     <FaLocationArrow />
-                    <p>Starg Group </p>
+                    <p>Kashif Hussain </p>
                   </div>
                 }
                 {
                   <div className="flex items-center gap-3 mt-6">
                     <FaMobileAlt />
-                    <p>+62-8978564201</p>
+                    <p>+91-3129776466</p>
                   </div>
                 }
 
