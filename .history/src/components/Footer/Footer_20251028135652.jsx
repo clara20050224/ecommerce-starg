@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMobileAlt, FaTiktok } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
 import {
   FaFacebook,
   FaInstagram,
@@ -119,18 +119,25 @@ const Footer = () => {
 
                 <div className="flex items-center gap-3 mt-6">
                   <a
-                    href="https://www.instagram.com/star.gshop?igsh=M2hkYnVjMTNrYWcx&utm_source=qr"
+                    href="https://www.instagram.com/kashif_dayal_313/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaInstagram className="text-3xl hover:text-primary duration-300" />
                   </a>
                   <a
-                    href="https://www.tiktok.com/@stargstyle?_t=ZS-90v2ONLTFHb&_r=1"
+                    href="https://www.facebook.com/profile.php?id=100072035328558"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaTiktok className="text-3xl hover:text-primary duration-200" />
+                    <FaFacebook className="text-3xl hover:text-primary duration-200" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/kashif-hussain64/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin className="text-3xl hover:text-primary duration-200" />
                   </a>
                 </div>
               </div>

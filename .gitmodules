@@ -1,0 +1,3 @@
+[submodule "payment/midtrans"]
+	path = payment/midtrans
+	url = https://github.com/lvlyya/midtrans.git

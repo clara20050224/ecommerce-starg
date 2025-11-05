@@ -132,6 +132,13 @@ const Footer = () => {
                   >
                     <FaTiktok className="text-3xl hover:text-primary duration-200" />
                   </a>
+                  <a
+                    href="https://www.linkedin.com/in/kashif-hussain64/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin className="text-3xl hover:text-primary duration-200" />
+                  </a>
                 </div>
               </div>
             </div>

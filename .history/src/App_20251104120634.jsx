@@ -152,5 +152,42 @@ const App = () => {
   );
 };
 
+// src/App.jsx
+
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+// Impor halaman yang sudah kita buat
+import HomePage from './pages/HomePage';
+import CheckoutPage from './pages/CheckoutPage';
+
+// Anda mungkin masih perlu impor beberapa hal global di sini
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import 'aos/dist/aos.css';
+// ... (Impor AOS, dll jika perlu di semua halaman)
+
+function App() {
+  // Inisialisasi AOS atau hal global lainnya di sini jika perlu
+  // React.useEffect(() => {
+  //   AOS.init(...);
+  // }, []);
+
+  return (
+    <>
+      {/* ToastContainer bisa ditaruh di sini agar muncul di semua halaman */}
+      <ToastContainer />
+      
+      <Routes>
+        {/* Rute untuk Homepage */}
+        <Route path="/" element={<HomePage />} />
+        
+        {/* Rute untuk Halaman Checkout */}
+        <Route path="/checkout" element={<CheckoutPage />} />
+      </Routes>
+    </>
+  );
+}
+
 export default App;
 

@@ -5,12 +5,8 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { BrowserRouter } from 'react-router-dom';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>  {/* Tambahkan ini */}
-      <App />
-    </BrowserRouter> {/* Tambahkan ini */}
+    <App />
   </React.StrictMode>
 );

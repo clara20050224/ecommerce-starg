@@ -33,7 +33,7 @@ const ProductCard = ({ data, handleOrderPopup }) => {
             </div>
             <div className="leading-7">
               <h2 className="font-semibold">{item.title}</h2>
-              <h2 className="font-bold">Rp. {item.price}</h2>
+              <h2 className="font-bold">Rp.{item.price}</h2>
             </div>
           </div>
         ))}
