@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Midtrans Flask Snap Demo</title>
+  </head>
+  <body>
+    <h1>WALLET</h1>
+    <button id="pay-button">Pay</button>
+    <p>Lihat hasilnya di console browser (F12) setelah pembayaran.</p>
+
+    <script
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="Mid-client-xxxxxxxx"
+    ></script>
+
+    <script>
+      document.getElementById("pay-button").onclick = function () {
+        // Meminta Snap Token dari backend (app.py)
+        fetch("/create_transaction", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.error) {
+              alert("Gagal membuat transaksi: " + data.error);
+              return;
+            }
+
+            // Buka pop-up Snap
+            window.snap.pay(data.token, {
+              onSuccess: function (result) {
+                console.log("Payment Success:", result);
+                alert("Pembayaran Berhasil! Cek console browser.");
+              },
+              onPending: function (result) {
+                console.log("Payment Pending:", result);
+                alert("Pembayaran Menunggu! Cek console browser.");
+              },
+              onError: function (result) {
+                console.log("Payment Error:", result);
+                alert("Pembayaran Gagal! Cek console browser.");
+              },
+              onClose: function () {
+                console.log("Popup closed by customer");
+              },
+            });
+          })
+          .catch((err) => {
+            console.error("Fetch error:", err);
+            alert("Request failed.");
+          });
+      };
+    </script>
+  </body>
+</html>
