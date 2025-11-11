@@ -10,8 +10,8 @@ CORS(app)  # <-- 2. TAMBAHKAN INI (untuk mengizinkan koneksi dari React)
 # (Kunci Anda sudah benar di sini)
 snap = midtransclient.Snap(
     is_production=False,
-    server_key='Mid-server-nRnvystmVRjbzLWPfpUIc6Da',
-    client_key='Mid-client-YrOZ1XhpKFqBSNee'
+    server_key='Mid-server-xxxxxxx',
+    client_key='Mid-client-xxxxxxx'
 )
 
 # 3. HAPUS ROUTE INI

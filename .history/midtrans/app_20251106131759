@@ -7,8 +7,8 @@ app = Flask(__name__)
 # ====== MIDTRANS CONFIG (SANDBOX) ======
 snap = midtransclient.Snap(
     is_production=False,
-    server_key='Mid-server-xxxxxxx',
-    client_key='Mid-client-xxxxxxx'
+    server_key='Mid-server-',
+    client_key='Mid-client-'
 )
 
 @app.route('/')
