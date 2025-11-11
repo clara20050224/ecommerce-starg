@@ -1,0 +1,72 @@
+
+import React, { useState } from 'react';
+import Heading from '../Shared/Heading';
+import ProductCard from './ProductCard';
+import Popup from '../Popup/Popup';
+
+import Img1 from '../../assets/product/p-1.jpg';
+import Img2 from '../../assets/product/p-2.jpg';
+import Img3 from '../../assets/product/p-3.jpg';
+import Img4 from '../../assets/product/p-4.jpg';
+import Img5 from '../../assets/product/p-5.jpg';
+import Img6 from '../../assets/product/p-9.jpg';
+import Img7 from '../../assets/product/p-7.jpg';
+
+const ProductsData = [
+  { id: 1, img: Img1, title: 'Cute White Top', price: '120.000', aosDelay: '000' },
+  { id: 2, img: Img2, title: 'white top with blue stripes ', price: '420.000', aosDelay: '200.000' },
+  { id: 3, img: Img3, title: 'Cream Top', price: '320.000', aosDelay: '400.000' },
+  { id: 4, img: Img4, title: 'Cerry Hoodie', price: '220.000', aosDelay: '600.000' },
+];
+
+const ProductsData2 = [
+  { id: 5, img: Img5, title: 'Flare Pants', price: '120.000', aosDelay: '000' },
+  { id: 6, img: Img6, title: 'Jeans Pants', price: '420.000', aosDelay: '200.000' },
+  { id: 7, img: Img7, title: 'Brown Hoodie', price: '320.000', aosDelay: '400.000' },
+  { id: 8, img: Img5, title: 'Flare Pants', price: '220.000', aosDelay: '600.000' },
+];
+
+const Products = ({
+  orderPopup,
+  handleOrderPopup,
+  isLoggedIn,
+  handleLoginPopup,
+  handleLogin,
+  addToCart,
+}) => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+
+  const handleOrderPopupWithProduct = (product) => {
+    if (!isLoggedIn) {
+      handleLoginPopup();
+    } else {
+      setSelectedProduct(product);
+      handleOrderPopup();
+    }
+  };
+
+  return (
+    <div id="shop"> {/* Added id="shop" */}
+      <div className="container">
+        <Heading title="Our Products" subtitle="Explore Our Products" />
+        <ProductCard data={ProductsData} handleOrderPopup={handleOrderPopupWithProduct} />
+        <ProductCard data={ProductsData2} handleOrderPopup={handleOrderPopupWithProduct} />
+        <Popup
+          orderPopup={orderPopup}
+          handleOrderPopup={handleOrderPopup}
+          loginPopup={handleLoginPopup}
+          handleLoginPopup={handleLoginPopup}
+          handleLogin={handleLogin}
+          product={selectedProduct}
+          quantity={quantity}
+          setQuantity={setQuantity}
+          isLoggedIn={isLoggedIn}
+          addToCart={addToCart}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Products;

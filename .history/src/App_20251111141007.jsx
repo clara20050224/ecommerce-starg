@@ -35,7 +35,7 @@ const BannerData2 = {
   title2: "Casual Outfit for Man",
   title3: "Summer Sale",
   title4: "A sleek monochrome street style — black plaid shirt, washed denim pants, and all-black sneakers for a clean, confident, and effortlessly cool look.",
-  bgColor: "#397853ff",
+  bgColor: "#2dcc6f",
 };
 
 const App = () => {

@@ -21,11 +21,11 @@
 
 .slick-dots li button:before {
   font-size: 12px;
-  color: rgb(139, 52, 52); 
+  color: darkgray; 
 }
 
 .slick-dots li.slick-active button:before {
-  color: rgb(118, 48, 123); 
+  color: rgb(238, 0, 255); 
 }
 
 .ft-slick__dots--custom button {
