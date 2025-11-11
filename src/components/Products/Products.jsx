@@ -1,8 +1,7 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Heading from '../Shared/Heading';
 import ProductCard from './ProductCard';
-import Popup from '../Popup/Popup';
 
 import Img1 from '../../assets/product/p-1.jpg';
 import Img2 from '../../assets/product/p-2.jpg';
@@ -27,42 +26,25 @@ const ProductsData2 = [
 ];
 
 const Products = ({
-  orderPopup,
-  handleOrderPopup,
   isLoggedIn,
-  handleLoginPopup,
-  handleLogin,
   addToCart,
+  onCheckout,
 }) => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [quantity, setQuantity] = useState(1);
-
-  const handleOrderPopupWithProduct = (product) => {
-    if (!isLoggedIn) {
-      handleLoginPopup();
-    } else {
-      setSelectedProduct(product);
-      handleOrderPopup();
-    }
-  };
-
   return (
-    <div id="shop"> {/* Added id="shop" */}
+    <div id="shop">
       <div className="container">
         <Heading title="Our Products" subtitle="Explore Our Products" />
-        <ProductCard data={ProductsData} handleOrderPopup={handleOrderPopupWithProduct} />
-        <ProductCard data={ProductsData2} handleOrderPopup={handleOrderPopupWithProduct} />
-        <Popup
-          orderPopup={orderPopup}
-          handleOrderPopup={handleOrderPopup}
-          loginPopup={handleLoginPopup}
-          handleLoginPopup={handleLoginPopup}
-          handleLogin={handleLogin}
-          product={selectedProduct}
-          quantity={quantity}
-          setQuantity={setQuantity}
-          isLoggedIn={isLoggedIn}
+        <ProductCard 
+          data={ProductsData} 
           addToCart={addToCart}
+          onCheckout={onCheckout}
+          isLoggedIn={isLoggedIn}
+        />
+        <ProductCard 
+          data={ProductsData2} 
+          addToCart={addToCart}
+          onCheckout={onCheckout}
+          isLoggedIn={isLoggedIn}
         />
       </div>
     </div>

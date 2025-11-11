@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
-import { FaCaretDown, FaShoppingCart, FaTrashAlt } from "react-icons/fa";
+import { FaCaretDown, FaShoppingCart, FaTrashAlt, FaUser } from "react-icons/fa";
 // 1. GANTI NAMA LINK DARI REACT-SCROLL
 import { Link as ScrollLink } from "react-scroll"; 
 // 2. TAMBAHKAN LINK DARI REACT-ROUTER-DOM UNTUK PINDAH HALAMAN
@@ -34,8 +34,16 @@ const parsePrice = (priceStr) => {
 };
 
 
-const Navbar = ({ cartCount, cartItems, handleOrderPopup, removeFromCart }) => {
-  const [showCart, setShowCart] = useState(false);
+const Navbar = ({ 
+  cartCount, 
+  cartItems, 
+  removeFromCart, 
+  showCart, 
+  setShowCart,
+  onCheckout,
+  isLoggedIn,
+  user
+}) => {
 
   const handleCartClick = () => {
     setShowCart(!showCart);
